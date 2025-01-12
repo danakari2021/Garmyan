@@ -1,0 +1,518 @@
+// header site
+header {
+    nav {
+        .container {
+            @media (max-width: 425px) {
+                padding: 10px !important;
+            }
+
+            .hamberger-menu-item {
+                list-style: none;
+                display: none;
+                justify-content: space-between;
+                background-color: $color-cyan-100;
+                width: 100%;
+                z-index: 4;
+                position: absolute;
+                top: 82px;
+                padding: 10px 10px;
+                left: 0;
+                right: 0;
+                transform: translateY(-180%);
+                box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 18px 0px;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
+
+                img {
+                    width: auto;
+                    height: 42px !important;
+                }
+
+                .logo {
+                    &:hover {
+                        background-color: $color-cyan-100;
+                    }
+                }
+
+                a {
+                    padding: 7px 10px;
+                    cursor: pointer;
+                    line-height: 2;
+                    transition: all 0.4s;
+                    text-align: center;
+
+                    &:hover {
+                        background: $color-red;
+                        @include border-radius($border-radius: 10px);
+                    }
+                }
+            }
+
+            .nav-item {
+                @include fontSize($fontsize: 20px);
+                position: relative;
+            }
+
+            .navbar-nav {
+                .nav-item:hover {
+                    color: $color-red !important;
+                    transition: 0.9s;
+                }
+            }
+        }
+    }
+}
+
+// main site
+main {
+    .headline {
+        padding: 10px 5px !important;
+        @include border-radius($border-radius: 5px);
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .headline-item {
+            h2 {
+                @media (max-width: 768px) {
+                    margin-top: 40px;
+                    @include fontSize($fontsize: 25px);
+                }
+            }
+
+            @media (max-width: 768px) {
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .advertising {
+        @include border-radius($border-radius: 5px);
+
+        .advertising-item {
+            &:last-child {
+                @media (max-width: 375px) {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 5px;
+                }
+            }
+
+            img {
+                cursor: pointer;
+            }
+
+            img:first-child {
+                width: 10px;
+                height: 10px;
+                margin-top: 10px;
+
+                @media (max-width: 425px) {
+                    margin-top: 5px;
+                }
+            }
+
+            button {
+                position: relative;
+                background-color: $color-red;
+                border: none;
+                @include border-radius($border-radius: 5px);
+                @include fontSize($fontsize: 35px);
+                top: -20px;
+                width: 300px;
+                height: 70px;
+
+                @media (max-width: 768px) {
+                    @include fontSize($fontsize: 30px);
+                    width: 250px;
+                    height: 50px;
+                }
+
+                @media (max-width: 425px) {
+                    @include fontSize($fontsize: 20px);
+                    width: 200px;
+                    height: 40px;
+                }
+
+                @media (max-width: 375px) {
+                    @include fontSize($fontsize: 20px);
+                    top: 0;
+                }
+            }
+
+            p {
+                position: relative;
+                color: $color-red;
+                @include fontSize($fontsize: 48px);
+                cursor: pointer;
+                font-weight: bold;
+                left: 120px;
+
+                @media (max-width: 768px) {
+                    @include fontSize($fontsize: 35px);
+                }
+
+                @media (max-width: 425px) {
+                    @include fontSize($fontsize: 25px);
+                    left: 30px;
+                }
+
+                @media (max-width: 375px) {
+                    left: 0px;
+                }
+            }
+        }
+    }
+
+    .select {
+        @media (max-width: 768px) {
+            flex-direction: column !important;
+        }
+    }
+
+    .selection {
+        row-gap: 10px;
+        column-gap: 10px;
+
+        @media (max-width: 768px) {
+            width: 100% !important;
+            margin: 0 0 0 0 !important;
+            padding: 0 !important;
+        }
+
+        @media (max-width: 425px) {
+            margin: 0 0 0 0 !important;
+            padding: 0 !important;
+        }
+
+        .selection-item {
+            row-gap: 10px;
+            column-gap: 10px;
+
+            @media (max-width: 768px) {
+                row-gap: 1px;
+                column-gap: 1px;
+            }
+        }
+    }
+
+    .selection-row {
+        @media (max-width: 768px) {
+            width: 100% !important;
+            margin: 10px 0 0 0 !important;
+            padding: 0 !important;
+        }
+
+        @media (max-width: 425px) {
+            width: 100% !important;
+            margin: 10px 0 0 0 !important;
+            padding: 0 !important;
+        }
+
+        .selection-row-item {
+            @include border-radius($border-radius: 5px);
+            background-color: white;
+            height: 680px !important;
+
+            .selection-row-item-head {
+                @media (max-width: 768px) {
+                    margin: 0 15px 0 0 !important;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                height: 665px !important;
+            }
+
+            .item {
+                img {
+                    width: 80px;
+                    height: 60px;
+                }
+
+                p {
+                    @include fontSize($fontsize: 14px);
+
+                    @media (max-width: 1024px) {
+                        @include fontSize($fontsize: 12px);
+                    }
+                }
+
+                h6 {
+                    @include fontSize($fontsize: 16px);
+
+                    @media (max-width: 1024px) {
+                        @include fontSize($fontsize: 12px);
+                    }
+                }
+            }
+
+        }
+
+        .selection-row-advertising {
+            @include border-radius($border-radius: 5px);
+            background-color: $color-blue;
+            height: 310px;
+
+            img {
+                @media (max-width: 768px) {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            h3 {
+                @media (max-width: 768px) {
+                    @include fontSize($fontsize: 12px);
+                }
+            }
+
+            p {
+                @media (max-width: 768px) {
+                    @include fontSize($fontsize: 12px);
+                }
+            }
+
+            @media (max-width: 1024px) {
+                height: 300px !important;
+            }
+
+            @media (max-width: 768px) {
+                height: 170px !important;
+            }
+        }
+    }
+
+    .report,
+    .meet,
+    .comment,
+    .photostory {
+        @include border-radius($border-radius: 5px);
+    }
+}
+
+.report,
+.meet,
+.photostory {
+    .photostory-item {
+        img {
+            width: 100%;
+            height: 90%;
+        }
+    }
+
+    .report-item {
+        .position {
+            position: absolute;
+            bottom: 0;
+
+            @media (max-width: 425px) {
+                padding: 10px;
+
+                h5 {
+                    @include fontSize($fontsize: 14px);
+                }
+
+                h6 {
+                    @include fontSize($fontsize: 14px);
+                }
+            }
+        }
+
+        .card:nth-child(1) {
+            img {
+                width: 100%;
+                height: 280px;
+
+                @media (max-width: 425px) {
+                    height: 180px !important;
+                }
+            }
+        }
+
+        .card:nth-child(2) {
+            img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        .card:nth-child(3) {
+            img {
+                width: 100%;
+                height: 120px !important;
+
+                @media (max-width: 425px) {
+                    height: 180px !important;
+                }
+            }
+        }
+    }
+
+    .meet-item {
+        .card:nth-child(1) {
+            img {
+                width: 100%;
+                height: 300px;
+
+                @media (max-width: 425px) {
+                    height: 220px !important;
+                }
+            }
+        }
+
+        .card:nth-child(2) {
+            img {
+                width: 100%;
+                height: 120px;
+
+                @media (max-width: 425px) {
+                    height: 80px !important;
+                }
+            }
+        }
+    }
+
+    .report-item,
+    .meet-item,
+    .photostory-item {
+        gap: 10px;
+
+        @media (max-width: 425px) {
+            flex-direction: column !important;
+        }
+
+        .card {
+            @media (max-width: 425px) {
+                width: 100% !important;
+                flex-direction: column !important;
+                align-items: center;
+                text-align: center;
+            }
+
+            img {
+                @media (max-width: 425px) {
+                    width: 300px !important;
+                    height: 500px !important;
+                }
+                @media (max-width: 325px) {
+                    width: 100% !important;
+                    height: 500px !important;
+                }
+            }
+        }
+    }
+}
+
+.comment {
+    .comment-item {
+        .comment-item-box {
+            gap: 10px;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+
+            @media (max-width: 425px) {
+                flex-direction: column !important;
+                align-items: center;
+                text-align: center;
+            }
+
+            .card {
+                @media (max-width: 425px) {
+                    flex-direction: column !important;
+                    align-items: center;
+                    text-align: center;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+.selection-row-item-head {
+    background: linear-gradient(90deg, #fff 40%, #CDD2FF, #FFEAEA);
+    border-top-left-radius: 5px;
+}
+
+.particular-item {
+    .particular-item-colm {
+        img {
+            width: 450px;
+            height: 310px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            @media (max-width: 425px) {
+                width: 300px !important;
+            }
+        }
+
+        img {
+            @media (max-width: 325px) {
+                width: 100% !important;
+            }
+        }
+
+        .w-50 {
+            @media (max-width: 425px) {
+                width: 100% !important;
+            }
+
+            h4 {
+                @media (max-width: 425px) {
+                    @include fontSize($fontsize: 16px);
+                }
+            }
+
+            h2 {
+                @media (max-width: 425px) {
+                    @include fontSize($fontsize: 18px);
+                }
+            }
+
+            p {
+                @media (max-width: 425px) {
+                    @include fontSize($fontsize: 12px);
+                }
+            }
+        }
+    }
+}
+
+// footer site
+footer {
+    background-color: #152745;
+    height: max-content;
+
+    .footer-logo {
+        cursor: pointer;
+    }
+
+    .container {
+        .social {
+            img {
+                width: 45px;
+                height: 45px;
+                margin: 0px 5px;
+
+                &:hover {
+                    border: 3px solid transparent;
+                }
+            }
+        }
+    }
+}

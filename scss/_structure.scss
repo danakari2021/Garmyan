@@ -1,0 +1,43 @@
+// color site
+$color-cyan: #0097a7;
+$color-cyan-100: #4DA8B0;
+$color-black: #000;
+$color-red: #DA291C;
+$color-gray: #D0CECE;
+$color-gray-200: #f5f5f5;
+$color-gray-300: #999999;
+$color-blue: #143D84;
+
+// font site
+@font-face {
+    font-family: "Vazirmatn-Black";
+    src: url(../fonts/Vazirmatn-Black.ttf);
+}
+
+@font-face {
+    font-family: "Vazirmatn-Bold";
+    src: url(../fonts/Vazirmatn-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Vazirmatn-Regular";
+    src: url(../fonts/Vazirmatn-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Vazirmatn-SemiBold";
+    src: url(../fonts/Vazirmatn-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Vazirmatn-Thin";
+    src: url(../fonts/Vazirmatn-Thin.ttf);
+}
+
+@mixin fontSize($fontsize: 1rem) {
+    font-size: $fontsize;
+}
+
+@mixin border-radius($border-radius: 50%) {
+    border-radius: $border-radius;
+}

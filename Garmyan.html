@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@9.3.2_swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="images/ico.png" />
+    <title>گەرمیان ناو</title>
+</head>
+
+<body>
+    <!-- hamburgermenu-load -->
+    <input type="checkbox" class="d-none" id="toggle">
+    <!-- go up site button -->
+    <button onclick="topFunction()" id="go-up" title="Go to top"><img src="images/gotop.svg"></button>
+
+    <header>
+        <!-- menu -->
+        <nav class="navbar navbar-expand">
+            <div class="container justify-content-space-between">
+                <label for="toggle" class="d-md-none d-md-flex toggle-menu">
+                    <img src="images/icon-menu.png" class="point">
+                </label>
+                <div class="hamberger-menu-item d-flex">
+                    <a href="#" class="logo">
+                        <img src="images/Garmyan Now (W).png" alt="Garmyan Logo" class="mb-3" />
+                    </a>
+                    <div>
+                        <a href="#" class="nav-item nav-link text-white">هەواڵ</a>
+                        <a href="#" class="nav-item nav-link text-white">ڕاپۆرت</a>
+                        <a href="#" class="nav-item nav-link text-white">چاوپێکەوتن</a>
+                        <a href="#" class="nav-item nav-link text-white">بیروڕا</a>
+                        <a href="#" class="nav-item nav-link text-white">فۆتۆ ستۆری</a>
+                        <a href="#" class="nav-item nav-link text-white">تایبەت</a>
+                    </div>
+                </div>
+                <img src="images/Garmyan Now (W).png" class="d-md-flex d-none point">
+                <div class="navbar-nav d-none d-md-flex">
+                    <a href="#" class="nav-item nav-link text-white">هەواڵ</a>
+                    <a href="#" class="nav-item nav-link text-white">ڕاپۆرت</a>
+                    <a href="#" class="nav-item nav-link text-white">چاوپێکەوتن</a>
+                    <a href="#" class="nav-item nav-link text-white">بیروڕا</a>
+                    <a href="#" class="nav-item nav-link text-white">فۆتۆ ستۆری</a>
+                    <a href="#" class="nav-item nav-link text-white">تایبەت</a>
+                </div>
+                <img src="images/Search.png" class="point">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-3 mb-3">
+        <div class="container d-flex bg-white headline">
+            <div class="me-2 mt-4 w-75 headline-item">
+                <h2 class="mb-5">بەڕێوەبەری نەخۆشخانەی گشتیی کەلار: تەندروستیی گەرمیان وەڵامی داواکارییەکانمان ناداتەوە
+                </h2>
+                <p>ئەمڕۆ سێشەممە 30ـی کانوونی دووەمی 2024 د. حارس محەممەد، بەڕێوەبەری نەخۆشخانەی گشتیی کەلار
+                    تایبەت بە رووداو گوتی، بەهۆی ناکۆکیی نێوان ئیدارەی نەخۆشخانەکە و بەڕێوەبەرایەتیی تەندروستیی گەرمیان،
+                    دەسەڵاتەکانیان کەمبووەتەوە و بەڕێوەبەری گشتیی</p>
+            </div>
+            <div>
+                <img src="images/headline.png" class="w-100">
+            </div>
+        </div>
+        <div class="bg-black flex-column p-3 mt-3 mb-3 advertising">
+            <div class="d-flex justify-content-between advertising-item">
+                <img src="images/Close.png">
+                <img src="images/Garmyan Now (W).png">
+            </div>
+            <div class="d-flex justify-content-between advertising-item">
+                <button class="me-2 pt-1 pb-1 pe-4 px-4 text-white">بەدەستی بهێنە</button>
+                <p>لێرە ریکلام بکە</p>
+            </div>
+        </div>
+        <div class="container d-flex mb-3 select">
+            <div class="selection col-8 d-flex flex-column">
+                <div class="d-flex selection-item">
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-1.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                    </div>
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-2.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                    </div>
+                </div>
+                <div class="d-flex selection-item">
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-3.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                        </p>
+                    </div>
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-4.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                    </div>
+                </div>
+                <div class="d-flex selection-item">
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-5.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                    </div>
+                    <div class="selection-card card bg-white col-6 p-3">
+                        <img src="images/Selection-6.png">
+                        <h6 class="text-secondary mt-3">پێش ١ دەقیقە</h6>
+                        <p class="me-2">داوا لە حکومەتى عێراق دەکرێت نەوت بە دراوێکی دیکە جگە لە دۆلار بفرۆشێت عێراق
+                            دەکرێت</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selection-row col-4 pe-4">
+                <div class="selection-row-item">
+                    <div class="selection-row-item-head border-2">
+                        <h3 class="pe-3 pt-2">بژاردەی گەرمیان ناو</h3>
+                    </div>
+                    <div class="item mt-3 pb-2 me-3 border-1">
+                        <p class="text-secondary">پێش ١ دەقیقە</p>
+                        <div class="d-flex">
+                            <img src="images/Selection-9.png">
+                            <h6 class="w-50 me-3">لە ئەڵمانیا جوتیاران رێگەی گەیشتنیان بە چەند بەندەرێک داخست</h6>
+                        </div>
+                    </div>
+                    <div class="item mt-2 pb-2 me-3 border-1">
+                        <p class="text-secondary">پێش ١ دەقیقە</p>
+                        <div class="d-flex">
+                            <img src="images/Selection-9.png">
+                            <h6 class="w-50 me-3">لە ئەڵمانیا جوتیاران رێگەی گەیشتنیان بە چەند بەندەرێک داخست</h6>
+                        </div>
+                    </div>
+                    <div class="item mt-2 pb-2 me-3 border-1">
+                        <p class="text-secondary">پێش ١ دەقیقە</p>
+                        <div class="d-flex">
+                            <img src="images/Selection-9.png">
+                            <h6 class="w-50 me-3">لە ئەڵمانیا جوتیاران رێگەی گەیشتنیان بە چەند بەندەرێک داخست</h6>
+                        </div>
+                    </div>
+                    <div class="item mt-2 pb-2 me-3 border-1">
+                        <p class="text-secondary">پێش ١ دەقیقە</p>
+                        <div class="d-flex">
+                            <img src="images/Selection-9.png">
+                            <h6 class="w-50 me-3">لە ئەڵمانیا جوتیاران رێگەی گەیشتنیان بە چەند بەندەرێک داخست</h6>
+                        </div>
+                    </div>
+                    <div class="item mt-2 me-3 pb-2">
+                        <p class="text-secondary">پێش ١ دەقیقە</p>
+                        <div class="d-flex">
+                            <img src="images/Selection-9.png">
+                            <h6 class="w-50 me-3">لە ئەڵمانیا جوتیاران رێگەی گەیشتنیان بە چەند بەندەرێک داخست</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-row-advertising p-5 mt-4">
+                    <img src="images/Close.png">
+                    <h3 class="text-white text-center">إعلانات جوجل</h3>
+                    <p class="text-white text-center">الصحفيون الرياضيون يقطعون الطريق أيها الاسكتلندي</p>
+                </div>
+            </div>
+        </div>
+        <div class="report bg-white p-3 mb-3">
+            <div class="selection-row-item-head d-flex align-items-center justify-content-between border-2 pt-2">
+                <h3 class="me-3">ڕاپۆرت</h3>
+                <a href="" class="mx-3 text-black more">زیاتر ببینە<i class="fa fa-arrow-left me-2"></i></a>
+            </div>
+            <div class="d-flex bg-white justify-content-between pt-3 pb-1 pe-0 px-4 report-item">
+                <div class="card col-4 no-border point">
+                    <img src="images/Report-1.webp" class="radius">
+                    <div class="d-flex mt-3">
+                        <p class="report-time">پێش 5 دەقیقە</p>
+                        <span class="border-3 me-2 mx-2"></span>
+                        <p class="text-danger report-time">متصل</p>
+                    </div>
+                    <h4 class="mt-2">ئۆپراسیۆنی هاوبەشی هێزەکانی هەسەدە – یەپەژە- ئاسایش و هاوپەیمانیی نێودەوڵەتی لە
+                        کامپی هۆڵ</h4>
+                    <p class="mt-2">ئۆپراسیۆنی هاوبەشی هێزەکانی هەسەدە – یەپەژە- ئاسایش و هاوپەیمانیی نێودەوڵەتی لە
+                        کامپی هۆڵ · فۆتۆی زیاتر · سلێمانی؛ بەخاکسپاردنی تەرمی موزیکژەن ...</p>
+                </div>
+                <div class="card col-4 no-border point">
+                    <img src="images/Report-2.webp" class="radius">
+                    <div class="position">
+                        <p class="text-white p-2 report-time">پێش 5 دەقیقە</p>
+                        <h5 class="text-white p-3">سیت مازین هامبوس ئینتەرپشن پری تراید, یووت ئیمپیۆیت فاوگیت سێد.
+                        </h5>
+                        <h6 class="text-white p-3">لیرن سیت ئەمین دۆلۆر، ئیپسوم لۆپیم سەم ئایر کوول لایرین
+                        </h6>
+                    </div>
+                </div>
+                <div class="card col-4 no-border point">
+                    <img src="images/Report-3.webp" class="radius">
+                    <div class="d-flex mt-3">
+                        <p class="report-time">پێش 5 دەقیقە</p>
+                        <span class="border-3 me-2 mx-2"></span>
+                        <p class="text-danger report-time">رەنگدان</p>
+                    </div>
+                    <h5 class="mb-3">سیت مازین هامبوس ئینتەرپشن پری تراید, یووت ئیمپیۆیت فاوگیت سێد.
+                    </h5>
+                    <img src="images/Report-4.webp" class="radius">
+                    <div class="d-flex mt-3">
+                        <p class="report-time">پێش 5 دەقیقە</p>
+                        <span class="border-3 me-2 mx-2"></span>
+                        <p class="text-danger report-time">رەنگدان</p>
+                    </div>
+                    <h5>سیت مازین هامبوس ئینتەرپشن پری تراید, یووت ئیمپیۆیت فاوگیت سێد.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="meet bg-white p-3 mb-3">
+            <div class="selection-row-item-head d-flex align-items-center justify-content-between border-2 pt-2">
+                <h3 class="me-3">چاوپێکەوتن</h3>
+                <a href="" class="mx-3 text-black more">زیاتر ببینە<i class="fa fa-arrow-left me-2"></i></a>
+            </div>
+            <div class="d-flex bg-white justify-content-between pt-3 pb-1 pe-0 px-4 meet-item">
+                <div class="card col-8 no-border point">
+                    <img src="images/Meet-1.png" class="radius">
+                    <div class="mt-3">
+                        <h4 class="mt-2">گوگڵ تایبەتمەندیی ژیریی دەستکرد بۆ وێبگەڕی کرۆم زیاد دەکات</h4>
+                        <p class="mt-2">ئجۆزێف فرانک کیتۆن، ناسراو بە بەستەر کیتۆن، یەکێک بووە لە دیارترین ئەکتەرە
+                            سینەماییەکانی قۆناغی کلاسیکی هۆڵیوود و بە ئەنجامدانی جووڵەی مەترسیدا جووڵەی مەترسیدا جووڵەی
+                            مەترسیدا جووڵەی مەترسیدا جووڵەی مەترسیدار و</p>
+                    </div>
+                    <p class="text-primary report-time">سینەما</p>
+                </div>
+                <div class="card col-4 no-border point">
+                    <img src="images/Meet-2.png" class="radius">
+                    <div class="mt-3">
+                        <h5 class="mb-3">سیت مازین هامبوس ئینتەرپشن پری تراید, یووت ئیمپیۆیت فاوگیت سێد.
+                        </h5>
+                    </div>
+                    <p class="text-primary mt-1 report-time">سینەما</p>
+                    <img src="images/Meet-3.png" class="radius">
+                    <div class="mt-3">
+                        <h5>سیت مازین هامبوس ئینتەرپشن پری تراید, یووت ئیمپیۆیت فاوگیت سێد.
+                        </h5>
+                    </div>
+                    <p class="text-primary mt-1 report-time">سینەما</p>
+                </div>
+            </div>
+        </div>
+        <div class="comment bg-white p-3 mb-3">
+            <div class="selection-row-item-head d-flex align-items-center justify-content-between border-2 pt-2">
+                <h3 class="me-3">بیرو ڕا</h3>
+                <a href="" class="mx-3 text-black more">زیاتر ببینە<i class="fa fa-arrow-left me-2"></i></a>
+            </div>
+            <div class="comment-item">
+                <div class="d-flex bg-white justify-content-between pt-3 pb-0 pe-0 px-4 comment-item-box">
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-1.png" class="radius user">
+                        </div>
+                    </div>
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-2.png" class="radius user">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex bg-white justify-content-between pt-3 pb-0 pe-0 px-4 comment-item-box">
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-3.png" class="radius user">
+                        </div>
+                    </div>
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-4.png" class="radius user">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex bg-white justify-content-between pt-3 pb-0 pe-0 px-4 comment-item-box">
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-5.png" class="radius user">
+                        </div>
+                    </div>
+                    <div class="card col-6 point">
+                        <div class="d-flex align-items-center justify-content-between p-3">
+                            <div class="mt-3 w-75">
+                                <h6 class="mt-4">توێژینەوەیەک: جگەرەکێشان گرفتە دەروونییەکانی تازەپێگەیشتووان زیاددەکات
+                                </h6>
+                                <p class="text-primary mt-1 report-time">ناوی نوسەر</p>
+                            </div>
+                            <img src="images/Comment-6.png" class="radius user">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photostory bg-white p-3 mb-3">
+            <div class="selection-row-item-head d-flex align-items-center justify-content-between border-2 pt-2">
+                <h3 class="me-3">فۆتۆ ستۆری</h3>
+                <a href="" class="mx-3 text-black more">زیاتر ببینە<i class="fa fa-arrow-left me-2"></i></a>
+            </div>
+            <div class="d-flex bg-white justify-content-between pt-3 pb-1 pe-0 px-4 photostory-item">
+                <div class="card col-4 no-border point">
+                    <img src="images/Photostory-1.png" class="radius">
+                    <div class="d-flex mt-3 bg-white shadow p-3">
+                        <p>لە رووها کرێکارانی کۆمپانیای دابەشکردنی کارەبا مانیان گرتووە یەکێتیی تۆپی پێی</p>
+                    </div>
+                </div>
+                <div class="card col-4 no-border point">
+                    <img src="images/Photostory-2.png" class="radius">
+                    <div class="d-flex mt-3 bg-white shadow p-3">
+                        <p>لە رووها کرێکارانی کۆمپانیای دابەشکردنی کارەبا مانیان گرتووە یەکێتیی تۆپی پێی</p>
+                    </div>
+                </div>
+                <div class="card col-4 no-border point">
+                    <img src="images/Photostory-3.png" class="radius">
+                    <div class="d-flex mt-3 bg-white shadow p-3">
+                        <p>لە رووها کرێکارانی کۆمپانیای دابەشکردنی کارەبا مانیان گرتووە یەکێتیی تۆپی پێی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particular bg-white p-3 mb-3">
+            <div class="selection-row-item-head d-flex align-items-center justify-content-between border-2 pt-2">
+                <h3 class="me-3">تایبەت</h3>
+                <a href="" class="mx-3 text-black more">زیاتر ببینە<i class="fa fa-arrow-left me-2"></i></a>
+            </div>
+            <div class="bg-white justify-content-between pt-3 pb-1 pe-0 px-2 particular-item">
+                <div class="d-flex point justify-content-between pb-3 mb-3 border-4 particular-item-colm">
+                    <div class="w-50 mt-5">
+                        <h4 class="text-danger">١ کاتژمێر له‌مه‌وپێش</h4>
+                        <h2 class="mt-3">راگەیێنراوی فەرمی یەکێتیی تۆپی پێی ئاسیا لەسەر کارتە سوورەکەی ئەیمەن حوسێن</h2>
+                        <p class="mt-3">سەرۆکی لیژنە هاوبەشەکانی قایمقامیەتی سلێمانی رایگەیاند، لەماوەی مانگی رابردوودا
+                            زیاتر لە شەش هەزار سەردانیان بۆ بازاڕ و فرۆشگەکان هەبووە و 614 شوێن بە بڕی نزیکەی 40 ملیۆن
+                            دینار سزا دراون، دەشڵێت، </p>
+                    </div>
+                    <img src="images/Particular-1.png" class="radius">
+                </div>
+                <div class="d-flex point justify-content-between pb-3 mb-3 border-4 particular-item-colm">
+                    <div class="w-50 mt-5">
+                        <h4 class="text-danger">١ کاتژمێر له‌مه‌وپێش</h4>
+                        <h2 class="mt-3">یەکێتیی ئەوروپا بۆ وەرگرتنی هەڵوێست لەبارەی رۆژهەڵاتی نێوەڕاست چاوەڕێی ئەمریکا
+                            دەکات</h2>
+                        <p class="mt-3">سەرۆکی لیژنە هاوبەشەکانی قایمقامیەتی سلێمانی رایگەیاند، لەماوەی مانگی رابردوودا
+                            زیاتر لە شەش هەزار سەردانیان بۆ بازاڕ و فرۆشگەکان هەبووە و 614 شوێن بە بڕی نزیکەی 40 ملیۆن
+                            دینار سزا دراون، دەشڵێت، </p>
+                    </div>
+                    <img src="images/Particular-2.png" class="radius">
+                </div>
+                <div class="d-flex no-border point justify-content-between particular-item-colm">
+                    <div class="w-50 mt-5">
+                        <h4 class="text-danger">١ کاتژمێر له‌مه‌وپێش</h4>
+                        <h2 class="mt-3">ساڵی رابردوو خواست لەسەر زێڕ ئاستێکی پێوانەیی تۆمارکردووە</h2>
+                        <p class="mt-3">سەرۆکی لیژنە هاوبەشەکانی قایمقامیەتی سلێمانی رایگەیاند، لەماوەی مانگی رابردوودا
+                            زیاتر لە شەش هەزار سەردانیان بۆ بازاڕ و فرۆشگەکان هەبووە و 614 شوێن بە بڕی نزیکەی 40 ملیۆن
+                            دینار سزا دراون، دەشڵێت، </p>
+                    </div>
+                    <img src="images/Particular-3.png" class="radius">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container d-flex flex-column">
+            <div class="d-flex justify-content-between mt-3 mb-3 align-items-center flex-column flex-md-row">
+                <div class="footer-logo">
+                    <img src="images/Garmyan Now (W).png">
+                </div>
+                <div>
+                    <div class="mt-5 mb-5">
+                        <div class="d-flex menu-link">
+                            <a href="" class="nav-item nav-link text-white pe-3 ps-3">دەربارە</a>
+                            <a href="" class="nav-item nav-link text-white pe-3 ps-3">پەیوەندی</a>
+                            <a href="" class="nav-item nav-link text-white pe-3 ps-3">ریکلام بکە</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex social">
+                    <a href=""><img src="images/Youtube.png"></a>
+                    <a href=""><img src="images/Instagram.png"></a>
+                    <a href=""><img src="images/Linkedin.png"></a>
+                    <a href=""><img src="images/Facebook.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="css/cdn.jsdelivr.net_npm_swiper@9.3.2_swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/javascript.js"></script>
+
+</html>
